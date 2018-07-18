@@ -36,3 +36,8 @@ App Should Show Result in HEX
     Tap  hex
     Element Should Contain Text  info  HEX
     Element Should Contain Text  formula  11
+    Swipe  500  1097  650  1097
+
+App Should Clear Screen
+    Tap  clr
+    Element Should Contain Text  formula  ${EMPTY}

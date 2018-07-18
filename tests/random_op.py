@@ -19,7 +19,10 @@ def Random_Operation(a, b, c):
         sum = a * b
         print a, b, c, sum
     else:
-        c = a / b
+        if a&b !==0
+            c = a / b
+        else
+            return "Error"
         print a, b, c, sum
     return sum
 

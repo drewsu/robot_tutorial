@@ -1,6 +1,5 @@
 *** Settings ***
 Library  AppiumLibrary
-Library  random_op.py
 Library  BuiltIn
 
 *** Keywords ***
