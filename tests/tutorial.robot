@@ -1,15 +1,19 @@
 *** Settings ***
 Library  AppiumLibrary  10
+Library  CustomLibrary.py
 Resource  operations.robot
 Suite Setup  Open Application  http://localhost:4723/wd/hub
              ...  platformName=Android
-             ...  deviceName=${deviceName}
-             ...  udid=${deviceId}
-             ...  app=${appBinary}
+             ...  deviceName=device
+             ...  udid=54a9663d
+             ...  app=C:/Users/drewspio/Desktop/robot/robot_tutorial/mobile-debug.apk
              ...  automationName=uiautomator2
 Suite Teardown  Close Application
 
 *** Test Cases ***
+Robot Is Using Custom Library
+    Print Message
+
 App Presents The Calculator Screen When Launches
     Page Should Contain Element  id=digit_7
     Page Should Contain Element  id=digit_5

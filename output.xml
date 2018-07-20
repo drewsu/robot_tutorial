@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180720 09:40:23.468" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\drewspio\Desktop\robot\robot_tutorial\tests\tutorial.robot" id="s1" name="Tutorial">
+<kw type="setup" name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=device</arg>
+<arg>udid=54a9663d</arg>
+<arg>app=C:/Users/drewspio/Desktop/robot/robot_tutorial/mobile-debug.apk</arg>
+<arg>automationName=uiautomator2</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:12.461" starttime="20180720 09:40:23.726"></status>
+</kw>
+<test id="s1-t1" name="Robot Is Using Custom Library">
+<kw name="Print Message" library="CustomLibrary">
+<msg timestamp="20180720 09:41:12.462" level="INFO">This is custom keyword written in custom library</msg>
+<status status="PASS" endtime="20180720 09:41:12.462" starttime="20180720 09:41:12.462"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:12.463" critical="yes" starttime="20180720 09:41:12.461"></status>
+</test>
+<test id="s1-t2" name="App Presents The Calculator Screen When Launches">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=digit_7</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.698" level="INFO">Current page contains element 'id=digit_7'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.698" starttime="20180720 09:41:12.464"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=digit_5</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.730" level="INFO">Current page contains element 'id=digit_5'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.730" starttime="20180720 09:41:12.699"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=digit_3</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.760" level="INFO">Current page contains element 'id=digit_3'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.761" starttime="20180720 09:41:12.730"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=del</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.792" level="INFO">Current page contains element 'id=del'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.792" starttime="20180720 09:41:12.761"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=op_div</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.821" level="INFO">Current page contains element 'id=op_div'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.821" starttime="20180720 09:41:12.793"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>id=op_add</arg>
+</arguments>
+<msg timestamp="20180720 09:41:12.849" level="INFO">Current page contains element 'id=op_add'.</msg>
+<status status="PASS" endtime="20180720 09:41:12.849" starttime="20180720 09:41:12.822"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:12.850" critical="yes" starttime="20180720 09:41:12.463"></status>
+</test>
+<test id="s1-t3" name="App Presents The Advanced Tab">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. </doc>
+<arguments>
+<arg>50</arg>
+<arg>50</arg>
+<arg>10</arg>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:14.166" starttime="20180720 09:41:12.851"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=fun_sin</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:14.337" starttime="20180720 09:41:14.167"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@content-desc='pi']</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:14.474" starttime="20180720 09:41:14.339"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>500</arg>
+<arg>1097</arg>
+<arg>650</arg>
+<arg>1097</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:15.756" starttime="20180720 09:41:14.475"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:15.756" critical="yes" starttime="20180720 09:41:12.850"></status>
+</test>
+<test id="s1-t4" name="App Should Do Math Operation">
+<kw name="Operation" library="operations">
+<arguments>
+<arg>digit_9</arg>
+<arg>op_add</arg>
+<arg>digit_8</arg>
+<arg>17</arg>
+</arguments>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${first_digit}</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:16.070" starttime="20180720 09:41:15.761"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${action}</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:16.812" starttime="20180720 09:41:16.071"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${second_digit}</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:17.619" starttime="20180720 09:41:16.812"></status>
+</kw>
+<kw name="Equal" library="operations">
+<arguments>
+<arg>${sum}</arg>
+</arguments>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>eq</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:18.355" starttime="20180720 09:41:17.619"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>formula</arg>
+<arg>${sum}</arg>
+</arguments>
+<msg timestamp="20180720 09:41:18.356" level="INFO">Verifying element 'formula' contains text '17'.</msg>
+<status status="PASS" endtime="20180720 09:41:19.709" starttime="20180720 09:41:18.356"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:19.709" starttime="20180720 09:41:17.619"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:19.709" starttime="20180720 09:41:15.760"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:19.709" critical="yes" starttime="20180720 09:41:15.759"></status>
+</test>
+<test id="s1-t5" name="App Should Show Result in HEX">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. </doc>
+<arguments>
+<arg>50</arg>
+<arg>50</arg>
+<arg>10</arg>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:21.016" starttime="20180720 09:41:19.711"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>fab</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:21.972" starttime="20180720 09:41:21.018"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>btn_hex</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:22.633" starttime="20180720 09:41:21.973"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>btn_hex</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:22.791" starttime="20180720 09:41:22.635"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>hex</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:23.488" starttime="20180720 09:41:22.791"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>hex</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:23.650" starttime="20180720 09:41:23.489"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>info</arg>
+<arg>HEX</arg>
+</arguments>
+<msg timestamp="20180720 09:41:23.650" level="INFO">Verifying element 'info' contains text 'HEX'.</msg>
+<status status="PASS" endtime="20180720 09:41:24.943" starttime="20180720 09:41:23.650"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>formula</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20180720 09:41:24.944" level="INFO">Verifying element 'formula' contains text '11'.</msg>
+<status status="PASS" endtime="20180720 09:41:25.023" starttime="20180720 09:41:24.944"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>500</arg>
+<arg>1097</arg>
+<arg>650</arg>
+<arg>1097</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:26.273" starttime="20180720 09:41:25.023"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:26.280" critical="yes" starttime="20180720 09:41:19.711"></status>
+</test>
+<test id="s1-t6" name="App Should Clear Screen">
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>clr</arg>
+</arguments>
+<status status="PASS" endtime="20180720 09:41:26.486" starttime="20180720 09:41:26.287"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>formula</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20180720 09:41:26.487" level="INFO">Verifying element 'formula' contains text ''.</msg>
+<status status="PASS" endtime="20180720 09:41:28.073" starttime="20180720 09:41:26.487"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:28.074" critical="yes" starttime="20180720 09:41:26.285"></status>
+</test>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20180720 09:41:29.846" starttime="20180720 09:41:28.077"></status>
+</kw>
+<status status="PASS" endtime="20180720 09:41:29.846" starttime="20180720 09:40:23.472"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tutorial" pass="6">Tutorial</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
