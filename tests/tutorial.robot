@@ -28,7 +28,7 @@ App Presents The Advanced Tab
     Wait Until Page Contains Element  xpath=//android.widget.Button[@content-desc='pi']
     Swipe  500  1097  650  1097
 
-App Should Do Math Operation
+App Should Do "Add" Operation
     Operation  digit_9  op_add  digit_8  17
 
 App Should Show Result in HEX
@@ -45,3 +45,6 @@ App Should Show Result in HEX
 App Should Clear Screen
     Tap  clr
     Element Should Contain Text  formula  ${EMPTY}
+
+App Should Do "Add" Operation in HEX
+    Operation  digit_7  op_add  digit_3  A
